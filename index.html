@@ -17,7 +17,9 @@ a:link, a:hover, a:visited{
 	font-size: 20px;
 	color: #222;
 }
-
+.item{
+	height: 190px;
+}
 </style>
 
 <body>
@@ -25,7 +27,7 @@ a:link, a:hover, a:visited{
 <div class="container">
 
 	<!--轮播组-->
-<div id="myCarousel" class="carousel slide" style="height: 300px">
+<div id="myCarousel" class="carousel slide">
 	<!--指标-->
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"/>
@@ -34,15 +36,15 @@ a:link, a:hover, a:visited{
 	</ol>
 	<!--轮播项目-->
 	<div class="carousel-inner">
-		<div class="item active" style="height: 300px;">
+		<div class="item active">
 			<img class="img-responsive" src="Rsc/fm.jpg" style="max-width: 100%; max-height: 100%; margin: auto;" alt="First Pic">
 			<div class="carousel-caption" style="font-size: 30px">父爱如山</div>
 		</div>
-		<div class="item" style="height: 300px;">
+		<div class="item" >
 			<img class="img-responsive" src="Rsc/fm2.jpg" style="max-width: 100%; max-height: 100%; margin: auto;" alt="Second Pic">
 			<div class="carousel-caption" style="font-size: 30px">骑士录</div>
 		</div>
-		<div class="item" style="height: 300px;">
+		<div class="item" >
 			<img class="img-responsive" style="max-width: 100%; max-height: 100%; margin: auto;" src="Rsc/fm3.jpg" alt="Third Pic">
 			<div class="carousel-caption" style="font-size: 30px">甬俎 勇往直前</div>
 		</div>
@@ -66,7 +68,7 @@ a:link, a:hover, a:visited{
 <!--书架（标签页）-->
 <div >
 
-<ul id="myTab" class="nav nav-tabs" style="font-size: 15px"><!--tab体系开头-->
+<ul id="myTab" class="nav nav-tabs"><!--tab体系开头-->
 	<li class="active">
 		<a href="#home" data-toggle="tab">空之城</a>
 	</li>
@@ -74,7 +76,7 @@ a:link, a:hover, a:visited{
 
 	
 	<li class="dropdown"><!--下拉类-->
-		<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">更多作品
+		<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">更多
 		<b class="caret"></b><!--初步认为这仅仅是一个三角形符号罢了-->
 		</a>
 
@@ -256,17 +258,8 @@ a:link, a:hover, a:visited{
 	<div class="tab-pane fade" id="ejb">
 	
 	</div>
-
-
-
 </div>
-
-
-
 </div>
-
-
-
 
 </div>
 </body>
