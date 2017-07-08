@@ -9,18 +9,36 @@
 
 </head>
 
+
+
+
+<!--追加样式-->
 <style type="text/css">
 div>p{
-	 font-size: 20px;
+	 font-size: 15px;
 }
 a:link, a:hover, a:visited{
-	font-size: 20px;
-	color: #222;
+	font-size: 15px;
+	color: #222; 
 }
 .item{
 	height: 190px;
 }
+.limit70{
+	height: 70px;
+}
+.carousel-caption{
+	font-size: 30px;
+}
+.img-responsive{
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
 </style>
+
+
+
 
 <body>
 
@@ -32,96 +50,75 @@ a:link, a:hover, a:visited{
 	<ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"/>
 		<li data-target="#myCarousel" data-slide-to="1"/>
-		<li data-target="#myCarousel" data-slide-to="2"/>
 	</ol>
 	<!--轮播项目-->
 	<div class="carousel-inner">
 		<div class="item active">
-			<img class="img-responsive" src="Rsc/fm.jpg" style="max-width: 100%; max-height: 100%; margin: auto;" alt="First Pic">
-			<div class="carousel-caption" style="font-size: 30px">父爱如山</div>
+			<img class="img-responsive" src="Rsc/fuzi.jpg">
+			<div class="carousel-caption">父爱</div>
 		</div>
 		<div class="item" >
-			<img class="img-responsive" src="Rsc/fm2.jpg" style="max-width: 100%; max-height: 100%; margin: auto;" alt="Second Pic">
-			<div class="carousel-caption" style="font-size: 30px">骑士录</div>
-		</div>
-		<div class="item" >
-			<img class="img-responsive" style="max-width: 100%; max-height: 100%; margin: auto;" src="Rsc/fm3.jpg" alt="Third Pic">
-			<div class="carousel-caption" style="font-size: 30px">甬俎 勇往直前</div>
+			<img class="img-responsive" src="Rsc/qishi.jpg">
+			<div class="carousel-caption">骑士</div>
 		</div>
 	</div>
-	<!--轮播导航-->
-	<a class="carousel-control left" href="#myCarousel" data-slide="prev" style="font-size: 40px">
-		<span class="glyphicon glyphicon-circle-arrow-left"></span>
-
-	</a>
-	<a class="carousel-control right" href="#myCarousel" data-slide="next" style="font-size: 40px">
-		<span class="glyphicon glyphicon-circle-arrow-right"></span>
-
-	</a>
 </div>
-
-
-
-
 
 
 <!--书架（标签页）-->
 <div >
 
-<ul id="myTab" class="nav nav-tabs"><!--tab体系开头-->
+<ul id="myTab" class="nav nav-tabs nav-justified"><!--tab体系开头-->
 	<li class="active">
-		<a href="#home" data-toggle="tab">空之城</a>
+		<a href="#book1" data-toggle="tab">空之城</a>
 	</li>
-	<li><a href="#ios" data-toggle="tab">我思我不在</a></li>
-
-	
+	<li><a href="#book2" data-toggle="tab">我思我不在</a></li>
 	<li class="dropdown"><!--下拉类-->
 		<a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">更多
 		<b class="caret"></b><!--初步认为这仅仅是一个三角形符号罢了-->
 		</a>
 
 		<!--下拉中的菜单系统-->
-		<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-			<li><a href="#jmeter" tabindex="-1" data-toggle="tab">作品1</a></li>
-			<li><a href="#ejb" tabindex="-1" data-toggle="tab">作品2</a></li>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#bookmore1" tabindex="1" data-toggle="tab">作品1</a></li>
+			<li><a href="#bookmore2" tabindex="2" data-toggle="tab">作品2</a></li>
 		</ul>
 	</li>
 </ul><!--tab体系结束-->
 
 
+
 <div id="myTabContent" class="tab-content"> 
-	<div  class="tab-pane fade in active" id="home">
-		<div class="row" style="height: 70px">
+	<div  class="tab-pane fade in active" id="book1">
+		
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483700&idx=1&sn=6ab5f9807b71bdb73308ab16179a65d0&chksm=fe592dfec92ea4e8feb2ac9e70c5df349c286aef607a2c6400b493fad0fe5ffdd4c2030a173c#rd">
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
-			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
-
+			<div class="col-xs-4"> 
+				<img class="limit70" src="Rsc/sikao.jpg"/>
+				
 			</div>
+			<div>
 				<p class="col-xs-8">
-					阅读|空之城#008
+				阅读|空之城#008
 				</p>
+			</div>
 		</div>
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483692&idx=1&sn=9de490f095f5ce4279f0ea6f36d74de7&chksm=fe592de6c92ea4f0dfca45286d4ab58345023815490ebda20fed70f70f717edef884eccc1075#rd">
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
-			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
-
+			<div class="col-xs-4"> 
+				<img class="limit70" src="Rsc/suo.jpg"/>
 			</div>
 				<p class="col-xs-8">
-					阅读|空之城#007
+				阅读|空之城#007
 				</p>
 		</div>
 
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483677&idx=2&sn=6f46bba7802c82cabaebc5fee3c9a7e5&chksm=fe592dd7c92ea4c1b6eab939b6b80d73bc32c90b0e428510908d418b1a1815b78d6163f839a9#rd">
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
-			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
-
+			<div class="col-xs-4"> 
+				<img class="limit70" src="Rsc/heidong.jpg"/>
 			</div>
 				<p class="col-xs-8">
 					阅读|空之城#006
@@ -129,11 +126,11 @@ a:link, a:hover, a:visited{
 		</div>
 
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483669&idx=1&sn=c33961ea73e31ab39f2f5a3f8c1c6021&chksm=fe592ddfc92ea4c96d6501b7c0e4143d9ee0a45827c63d132cd4c7e82f2be5015b1c9ab83514#rd">
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
+			<div class="col-xs-4"> 
 			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+				<img class="limit70" src="Rsc/qishi.jpg"  alt="不到图片" />
 
 			</div>
 				<p class="col-xs-8">
@@ -142,11 +139,11 @@ a:link, a:hover, a:visited{
 		</div>
 
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483666&idx=1&sn=298ebede362427d323cf4cf3386b463f&chksm=fe592dd8c92ea4cee531038b314c04f74519a7db730f1dab7e944a0ed465b7ba929596612d92#rd">
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
+			<div class="col-xs-4"> 
 			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+				<img src="Rsc/fuzi.jpg" class="limit70" />
 
 			</div>
 				<p class="col-xs-8">
@@ -154,11 +151,11 @@ a:link, a:hover, a:visited{
 				</p>
 		</div>
 
-		<div class="row" style="height: 70px" >
+		<div class="limit70" >
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483661&idx=1&sn=99c71ec643b504adf6af01b68993fbab&chksm=fe592dc7c92ea4d169b7d3f260e5b2c05efebad401b0448c99eb00ac0ac38fcd51535b9a7dde#rd">
 			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
 			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+				<img src="Rsc/kzd.jpg" class="limit70" />
 
 			</div>
 				<p class="col-xs-8">
@@ -166,11 +163,11 @@ a:link, a:hover, a:visited{
 				</p>
 		</div>
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483657&idx=1&sn=7f40954c71d3966a5cc1d24efe39342e&chksm=fe592dc3c92ea4d588361639e6cc4bf9c100372203b2715e3b0b0ca93e62145d27eb601bc689#rd">
 			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
 			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+				<img src="Rsc/kzd.jpg" class="limit70" />
 
 			</div>
 				<p class="col-xs-8">
@@ -179,12 +176,12 @@ a:link, a:hover, a:visited{
 		</div>
 
 
-		<div class="row" style="height: 70px">
+		<div class="limit70">
 		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483653&idx=1&sn=86a421f974f2923403f43d2a0c04936c&chksm=fe592dcfc92ea4d9cd300cddc3a867bf364209bbe804925cd0dd669ef02f6a4907eb601832da#rd">
 
-			<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
+			<div class="col-xs-4"> 
 			
-				<img src="Rsc/kzc.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+				<img src="Rsc/kzd.jpg"  class="limit70" />
 
 			</div>
 				<p class="col-xs-8">
@@ -194,70 +191,74 @@ a:link, a:hover, a:visited{
 	</div>
 
 
+	<div class="tab-pane fade" id="book2">
 
+			<div class="limit70">
+			<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483697&idx=1&sn=9c42e254f7812de6be2f13fdad3b78c1&chksm=fe592dfbc92ea4ed5049755b57ac7c6be935ce917248588b1f1f3bd3e8e5b46ed3516d7da4b6#rd"/>
+					<div class="col-xs-4"> 
+					
+						<img src="Rsc/zbddx.jpg" class="limit70" />
 
-
-	<div class="tab-pane fade" id="ios">
-
-		<div class="row" style="height: 70px">
-		<a href="http://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483697&idx=1&sn=9c42e254f7812de6be2f13fdad3b78c1&chksm=fe592dfbc92ea4ed5049755b57ac7c6be935ce917248588b1f1f3bd3e8e5b46ed3516d7da4b6#rd">
-				<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
-				
-					<img src="Rsc/gzzn.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
-
-				</div>
-					<p class="col-xs-8">
-						阅读|我思我不在 #004
-					</p>
+					</div>
+						<p class="col-xs-8">
+							阅读|我思我不在 #004
+						</p>
 			</div>
 
 
-		<div class="row" style="height: 70px">
-		<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483690&idx=1&sn=1c18648846f5eb806924c5413b0b6517&chksm=fe592de0c92ea4f650bca6e7aaae6027a86c9d26e0d36664411f3da1bb5ec5acb88a68155283#rd">
-				<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
+
+			<div class="limit70">
+			<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483690&idx=1&sn=1c18648846f5eb806924c5413b0b6517&chksm=fe592de0c92ea4f650bca6e7aaae6027a86c9d26e0d36664411f3da1bb5ec5acb88a68155283#rd">
+				<div class="col-xs-4"> 
 				
-					<img src="Rsc/gzzn.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+					<img src="Rsc/gzzn.jpg" class="limit70" />
 
 				</div>
-					<p class="col-xs-8">
-						阅读|我思我不在 #003
-					</p>
+				<p class="col-xs-8">
+					阅读|我思我不在 #003
+				</p>
 			</div>
+			<!--行结束-->
 
-			<div class="row" style="height: 70px">
-			<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483683&idx=1&sn=9bb1134dddf1bdbee89958298233f5d7&chksm=fe592de9c92ea4ff4aa48d99568107f5c8aec84d06a3e644405e90182940f0cfc8d14fe43f9f#rd">
-				<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
+			<div class="limit70">
+			<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483683&idx=1&sn=9bb1134dddf1bdbee89958298233f5d7&chksm=fe592de9c92ea4ff4aa48d99568107f5c8aec84d06a3e644405e90182940f0cfc8d14fe43f9f#rd"/>
+				<div class="col-xs-4"> 
 				
-					<img src="Rsc/gzzn.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+					<img src="Rsc/gzzn.jpg" class="limit70" />
 
 				</div>
 					<p class="col-xs-8">
 						阅读|我思我不在 #002
 					</p>
 			</div>
+			<!--行结束-->
 
-
-			<div class="row" style="height: 70px">
-			<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483677&idx=1&sn=f6ce1c4b780927486953a117e36fb0c9&chksm=fe592dd7c92ea4c12f66a6a0067ccdcb98fa7ccb9ba124abf5516d9b131e69c35145b0fcc760#rd">
+			<div class="limit70">
+			<a href="https://mp.weixin.qq.com/s?__biz=MzU5NzExNDI3Nw==&mid=2247483677&idx=1&sn=f6ce1c4b780927486953a117e36fb0c9&chksm=fe592dd7c92ea4c12f66a6a0067ccdcb98fa7ccb9ba124abf5516d9b131e69c35145b0fcc760#rd"/>
 				<div class="col-xs-4" style="max-height: 70px; margin: auto"> 
 				
-					<img src="Rsc/gzzn.jpg"  alt="不到图片" style="max-height: 100%; margin: auto; max-width: 100%; height: 70px;" />
+					<img src="Rsc/gzzn.jpg"  class="limit70" />
 
 				</div>
 					<p class="col-xs-8">
 						阅读|我思我不在 #001
 					</p>
 			</div>
+			<!-- 行结束 -->
 
 	</div>
+	<!--页结束-->
 
-	<div class="tab-pane fade" id="jmeter">
-	
+
+
+	<div class="tab-pane fade" id="bookmore1"> 
+		
 	</div>
 
-	<div class="tab-pane fade" id="ejb">
-	
+	<div class="tab-pane fade" id="bookmore2">
+		
 	</div>
+
 </div>
 </div>
 
